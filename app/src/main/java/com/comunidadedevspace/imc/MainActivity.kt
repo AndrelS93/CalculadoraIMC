@@ -15,8 +15,9 @@ class MainActivity : AppCompatActivity() {
         val btncalcular = findViewById<Button>(R.id.btn_calcular)
 
         btncalcular.setOnClickListener {
-            val peso = edtPeso.text
-            val altura = edtaltura.text
+        val peso = edtPeso.text
+        val altura = edtaltura.text
+        println(" qual é seu peso "  +  peso)
         }
 
 

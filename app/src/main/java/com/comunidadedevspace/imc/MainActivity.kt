@@ -11,9 +11,11 @@ import com.google.android.material.textfield.TextInputEditText
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         val edtPeso = findViewById<TextInputEditText>(R.id.edt_peso)
         val edtaltura = findViewById<TextInputEditText>(R.id.edt_altura)
         val btncalcular = findViewById<Button>(R.id.btn_calcular)
+
 
         btncalcular.setOnClickListener {
         val pesoStr: String = edtPeso.text.toString()
@@ -22,7 +24,7 @@ import com.google.android.material.textfield.TextInputEditText
          if (pesoStr == "" || alturaStr == ""){
              Snackbar.make(
              edtPeso,
-            "Preencha todo os campos",
+            "Preencha todos os campos",
              Snackbar.LENGTH_LONG
              )
              .show()
